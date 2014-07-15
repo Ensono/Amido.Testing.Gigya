@@ -19,7 +19,7 @@ namespace Amido.Testing.Gigya
             return new GigyaRegistrationWorkflow(regToken, gigyaApiKey, gigyaSecretKey, apiDomain);
         }
 
-        public string InitializeRegistration(
+        private string InitializeRegistration(
             string gigyaApiKey,
            string gigyaSecretKey,
            string apiDomain)

@@ -90,7 +90,7 @@ namespace Amido.Testing.Gigya.Workflow
                 TimeSpan.FromSeconds(1));
         }
 
-        public void FinalizeRegistration()
+        public string FinalizeRegistration()
         {
             RetryHelper.Do(
                 () =>
@@ -110,6 +110,8 @@ namespace Amido.Testing.Gigya.Workflow
                         }
                     },
                 TimeSpan.FromSeconds(1));
+
+            return uid;
         }
     }
 }
